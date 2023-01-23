@@ -16,15 +16,17 @@ const double pi=3.14159265358979323846;
 const int MOD = 1000000007;
 void solve()
 {
-    string s; cin >> s;
-    // print s and reverse s
-    cout << s;
-    for(int i=sz(s)-1; i>=0; i--)
+    int n; cin >> n;
+    if(n%2==1)
     {
-        cout << s[i];
+        for(int i=0; i<n; i++) cout << n << " ";
+    }
+    else
+    {
+        cout << 1 << " " << 3 << " ";
+        for(int i=0; i<n-2; i++) cout << 2 << " ";
     }
     cout << endl;
-
 }
 int main()
 {
